@@ -1,0 +1,20 @@
+/*--------------------------------------------------Header*/
+
+.header-col {
+    height: 360px;
+    width: auto;
+}
+
+.header-col img {
+    height: 100%;
+    width: auto;
+}
+
+/*--------------------------------------------------Media Queries*/
+
+@media (max-width: 576px) {
+    .hidden {
+    height: 0;
+    filter: opacity(0);
+    }
+}
