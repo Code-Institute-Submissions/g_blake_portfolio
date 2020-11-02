@@ -2,6 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Neucha&family=Old+Standard+TT:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,800&display=swap');
 </style>
 
+/*--------------------------------------------------Sitewide*/
+
+body {
+    font-family: 'Old Standard TT', serif;
+}
+
 /*--------------------------------------------------Header*/
 
 header {
@@ -38,10 +44,7 @@ header {
 
 .center {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: auto;
 }
 
 .title {
@@ -49,6 +52,7 @@ header {
     text-align: center;
     color: #020202;
     text-decoration: none;
+    font-weight: 700;
 }
 
 .title:hover {
@@ -57,30 +61,44 @@ header {
  }
 
  .nav-bar {
-    background-color: whitesmoke;
     padding-top: 23px;
+    padding-bottom: 23px;
+    background-color: whitesmoke;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
  }
 
  .btn-nav-bar {
-     margin-top: 10px;
-     margin-bottom: 10px;
-     padding: 20px 17px 20px 17px;
-     background-color: #E4D8D8;
-     border-radius: 0;
-     text-decoration: none;
-     width: 98%;
-     height: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px 17px 20px 17px;
+    background-color: #E4D8D8;
+    border-radius: 0;
+    text-decoration: none;
+    width: 95%;
+    height: 90%;
  }
 
- .active {
-     background-clip: #b2a7a7;
- }
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+    background-color: #b2a7a7;
+}
+
+.btn-secondary:hover {
+    background-color: #b2a7a7;
+}
 
  .btn-nav-bar a {
-     text-decoration: none;
-     color: #733E24;
-     font-family: 'Old Standard TT', serif;
-     font-size: x-large;
+    text-decoration: none;
+    color: #733E24;
+    font-family: 'Old Standard TT', serif;
+    font-size: x-large;
+ }
+
+ /*--------------------------------------------------Main section (index)*/
+
+ .main-content {
+    background-color: whitesmoke;
  }
 
 /*--------------------------------------------------Media Queries*/
@@ -92,4 +110,3 @@ header {
     width: 0;
     }
 }
-
