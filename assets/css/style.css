@@ -63,12 +63,17 @@ header {
 
  .btn-nav-bar {
      margin-top: 10px;
+     margin-bottom: 10px;
      padding: 20px 17px 20px 17px;
      background-color: #E4D8D8;
      border-radius: 0;
      text-decoration: none;
      width: 98%;
-     height: 98%;
+     height: 90%;
+ }
+
+ .active {
+     background-clip: #b2a7a7;
  }
 
  .btn-nav-bar a {
