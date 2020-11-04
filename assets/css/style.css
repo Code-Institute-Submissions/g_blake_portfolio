@@ -1,63 +1,78 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Neucha&family=Old+Standard+TT:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,800&family=EB+Garamond:wght@400;500;600;700;800&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Neucha&family=Old+Standard+TT:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,800&family=EB+Garamond:wght@400;500;600;700;800&display=swap");
 
 /*--------------------------------------------------Site-wide*/
 
 body {
-    font-family: 'EB Garamond', serif;
+  font-family: "EB Garamond", serif;
 }
 
 a {
-    text-decoration: none;
-    color: #F2710D;
- }
-
-a:hover {
-    text-decoration: none;
-    color: #E8B00A;
+  text-decoration: none;
+  color: #b92913;
 }
 
- ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
- }
+a:hover {
+  text-decoration: none;
+  color: #e8b00a;
+}
 
- li {
-     padding-top: 15px;
- }
+/* The folowing is a workaround that makes the clickable area of links the same as the width and height of the button that conains them, I got the idea from: https://stackoverflow.com/questions/11078509/how-to-increase-the-clickable-area-of-a-a-tag-button*/
+
+button a {
+    display: block;
+    width: inherit;
+    height: inherit;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding-top: 15px;
+}
 
 /*--------------------------------------------------Header*/
 
 header {
-    margin: 0;
+  margin: 0;
 }
 
 .header-col {
-    height: 360px;
-    width: auto;
-    position: relative;
+  height: 360px;
+  width: auto;
+  position: relative;
 }
 
 .logo {
-    height: 100%;
-    width: auto;
+  height: auto;
+  width: 360px;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  padding: 0;
 }
 
 .button_img {
-    position: absolute;
-    top: 175px;
-    height: 32px;
-    width: 32px;
+  position: absolute;
+  top: 175px;
+  height: 32px;
+  width: 32px;
 }
 
 .button_img_l {
-    left: 30%;
+  left: 30%;
 }
 
 .button_img_r {
-    right: 30%;
+  right: 30%;
 }
 
 /*The following center class was found at https://www.w3schools.com/howto/howto_css_image_center.asp */
@@ -68,89 +83,136 @@ header {
 }
 
 .title {
-    font-family: 'Old Standard TT', serif;
-    text-align: center;
-    color: #020202;
-    font-weight: 700;
+  font-family: "Old Standard TT", serif;
+  text-align: center;
+  color: #020202;
+  font-weight: 700;
 }
 
-.h1, h1 {
-    font-weight: 700;
+.h1,
+h1 {
+  font-weight: 700;
 }
 
 .title:hover {
-  color:#020202;
- }
+  color: #020202;
+}
 
- .nav-bar {
-    padding-top: 23px;
-    padding-bottom: 23px;
-    background-color: whitesmoke;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
- }
+.nav-bar {
+  padding-top: 23px;
+  padding-bottom: 23px;
+  background-color: whitesmoke;
+}
 
- .btn-nav-bar {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 20px 17px 20px 17px;
-    background-color: #E4D8D8;
-    border-radius: 0;
-    width: 95%;
-    height: 90%;
- }
+.btn-nav-bar {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px 17px 20px 17px;
+  background-color: #e4d8d8;
+  border-radius: 0;
+  width: 95%;
+  height: 90%;
+}
 
-.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
-    background-color: #b2a7a7;
+.mob-nav-drop {
+  width: 15%;
+  background-color: #61291c;
+  border-color: #61291c;
+  border-radius: 0;
+}
+
+.btn-nav-drop {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  padding: 10px 0 10px 0;
+  background-color: #e4d8d8;
+  border-radius: 0;
+  width: 95%;
+  height: 75%;
+}
+
+.btn-primary:hover {
+  background-color: #e8b00a;
+  border-color: #e8b00a;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: #e8b00a;
+  border-color: #e8b00a;
+}
+
+.btn-primary.focus,
+.btn-primary:focus {
+  color: #fff;
+  background-color: #e8b00a;
+  border-color: #e8b00a;
+  box-shadow: 0 0 0 0.2rem rgba(97, 41, 28, 0.5);
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show > .btn-secondary.dropdown-toggle {
+  background-color: #b2a7a7;
 }
 
 .btn-secondary:hover {
-    background-color: #b2a7a7;
+  background-color: #b2a7a7;
 }
 
- .btn-nav-bar a {
-    color: #733E24;
-    font-family: 'Old Standard TT', serif;
-    font-size: x-large;
- }
+.btn-nav-bar,.mob-nav-drop a {
+  color: #733e24;
+  font-family: "Old Standard TT", serif;
+  font-size: x-large;
+}
 
+.card {
+    width: 80%;
+    padding: 10px;
+    border-radius: 0;
+}
 
+/*--------------------------------------------------Main section (index)*/
 
- /*--------------------------------------------------Main section (index)*/
+.main-content {
+  background-color: whitesmoke;
+  padding-top: 15px;
+  padding-left: 11px;
+  border-top: 1px solid;
+}
 
- .main-content {
-    background-color: whitesmoke;
-    padding-top: 15px;
-    padding-left: 11px;
-    border-top: 1px solid;
- }
-
- .contact-information {
-    text-align: center;
- }
+.contact-information {
+  text-align: center;
+}
 
 /*--------------------------------------------------Footer*/
 
 .me {
-    display: inline;
+  display: inline;
 }
 
 .me-container {
-    padding: 10px 10px 10px 10px;
+  padding: 10px 0 10px 10px;
 }
 
 .socials {
-    background-color: #E4D8D8;
-    padding: 15px 0 15px 0;
+  background-color: #e4d8d8;
+  padding: 15px 0 15px 0;
 }
 
 /*--------------------------------------------------Media Queries*/
 
 @media (max-width: 576px) {
-    .hidden {
+  .hidden {
     height: 0;
     filter: opacity(0);
     width: 0;
-    }
+  }
+}
+
+@media (max-width: 768px) {
+    .nav-bar {
+    padding-bottom: 5px;
+  }
 }
