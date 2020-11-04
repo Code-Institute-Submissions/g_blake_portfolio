@@ -34,26 +34,186 @@
   </head>
   <body>
     <header>
-      <div class="row nav-bar">
-        <a class="col-md-4 title center" href="#">
+      <div class="row no-gutters nav-bar sticky-top">
+        <a class="col-12 col-md-4 title center" href="#">
           <h1>Georgia Blake</h1>
-          <h2>- Textile Designer -</h2>
+          <h2>-Textile Designer-</h2>
         </a>
-        <div class="col-md-8">
-        <!--Below: a standard 2x2 grid from bootstrap's documentation, with the divider collumn made invisible on xs and small screens-->
+
+        <div class="col-12 d-md-none">
+          <!--Below: a standard dropdown from bootstrap's documentation, customised.-->
+          <p>
+            <a
+              class="btn btn-primary center mob-nav-drop"
+              data-toggle="collapse"
+              href="#collapseExample"
+              role="button"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              <i class="fas fa-bars"></i>
+            </a>
+          </p>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body center">
+              <button
+                type="button"
+                class="btn btn-secondary center btn-nav-drop"
+              >
+                <a href="index.html">Home</a>
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary center btn-nav-drop"
+              >
+                <a href="portfolio.html">Portfolio</a>
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary center btn-nav-drop active"
+              >
+                <a href="cv.html">CV</a>
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary center btn-nav-drop"
+              >
+                <a href="contact.html">Contact</a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-8 d-none d-sm-none d-md-inline">
+          <!--Below: a standard 2x2 grid from bootstrap's documentation, with the divider collumn made invisible on medium screens or larger-->
           <div class="container">
-            <div class="row">
-              <div class="col"><button type="button" class="btn btn-secondary center btn-nav-bar"><a href="index.html">Home</a></button></div>
-              <div class="col"><button type="button" class="btn btn-secondary center btn-nav-bar"><a href="portfolio.html">Portfolio</a></button></div>
-              <div class="w-100 d-block d-sm-block d-md-none"></div>
-              <div class="col"><button type="button" class="btn btn-secondary center btn-nav-bar active"><a href="cv.html">CV</a></button></div>
-              <div class="col"><button type="button" class="btn btn-secondary center btn-nav-bar"><a href="contact.html">Contact</a></button></div>
+            <div class="row no-gutters">
+              <div class="col">
+                <button
+                  type="button"
+                  class="btn btn-secondary center btn-nav-bar"
+                >
+                  <a href="index.html">Home</a>
+                </button>
+              </div>
+              <div class="col">
+                <button
+                  type="button"
+                  class="btn btn-secondary center btn-nav-bar"
+                >
+                  <a href="portfolio.html">Portfolio</a>
+                </button>
+              </div>
+              <div class="col">
+                <button
+                  type="button"
+                  class="btn btn-secondary center btn-nav-bar active"
+                >
+                  <a href="cv.html">CV</a>
+                </button>
+              </div>
+              <div class="col">
+                <button
+                  type="button"
+                  class="btn btn-secondary center btn-nav-bar"
+                >
+                  <a href="contact.html">Contact</a>
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </header>
-    <section></section>
-    <footer></footer>
+    <section class="main-content main-content-2">
+      <div class="row no-gutters">
+        <div class="col-12 col-md-3 skills">
+          <h2>My Skills:</h2>
+          <ul class="skills-list">
+            <li>Stitch 1</li>
+            <li>Stitch 2</li>
+            <li>Stitch 3</li>
+            <li>Embroidery</li>
+            <li>Corrections</li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-9">
+          <div class="col-12 col-md-4 work-history">
+            <h2>Work History:</h2>
+            <ul>
+              <li>
+                <p>
+                  Nov 2020 - Present<br />
+                  <b>Reading College (Teaching Assistant)</b>
+                </p>
+                <p>
+                  Assisting teachers in a variety of subjects, often working
+                  with students with special needs.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Nov 2020 - Present<br />
+                  <b>Reading College (Teaching Assistant)</b>
+                </p>
+                <p>
+                  Assisting teachers in a variety of subjects, often working
+                  with students with special needs.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4 work-history">
+          <ul>
+              <li>
+                <p>
+                  Nov 2020 - Present<br />
+                  <b>Reading College (Teaching Assistant)</b>
+                </p>
+                <p>
+                  Assisting teachers in a variety of subjects, often working
+                  with students with special needs.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Nov 2020 - Present<br />
+                  <b>Reading College (Teaching Assistant)</b>
+                </p>
+                <p>
+                  Assisting teachers in a variety of subjects, often working
+                  with students with special needs.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4 work-history"></div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="row no-gutters">
+        <div class="col-12 col-md-8">
+          <div class="row no-gutters">
+            <div class="col-1"></div>
+            <div class="col-11 me-container">
+              <h4 class="me">Me:</h4>
+              <p class="me">
+                A talented and dedicated textile designer&nbsp;
+                <a href="#"><i class="fas fa-home"></i></a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 contact-information socials">
+          <h4 class="me">Socials:</h4>
+          &nbsp;&nbsp;<a href="#"><i class="fab fa-linkedin"></i></a
+          >&nbsp;&nbsp;
+          <a href="#"><i class="fab fa-instagram-square"></i></a>&nbsp;&nbsp;
+          <a href="#"><i class="fab fa-facebook-square"></i></a>&nbsp;&nbsp;
+          <a href="#"><i class="fab fa-youtube-square"></i></a>&nbsp;&nbsp;
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
