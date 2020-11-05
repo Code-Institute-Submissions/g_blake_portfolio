@@ -214,10 +214,19 @@ h1 {
     padding-top: 10px;
 }
 
-.work-history{
+#work-history{
     padding: 10px 0 0 17px;
 }
 
+.cv-download {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    width: 50%;
+    height: auto;
+    background-color: #E4D8D8;
+    border: 1px solid;
+}
 /*--------------------------------------------------Footer*/
 
 .me {
@@ -233,6 +242,13 @@ h1 {
   padding: 15px 0 15px 0;
 }
 
+#cv-download {
+    background-color: #733e24;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(97, 41, 28, 0.5)
+}
 /*--------------------------------------------------Media Queries*/
 
 @media (max-width: 768px) {
@@ -247,9 +263,14 @@ h1 {
   .skills{
       border-bottom: 1px solid;
   }
+  #cv-download{
+    width: 75%;
+    margin-bottom: 20px;
+}
 }
 
 @media (min-width: 768px) {
     .skills{
         border-right: 1px solid;
     }
+}
