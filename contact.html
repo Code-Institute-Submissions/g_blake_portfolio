@@ -32,28 +32,143 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>GB Portfolio</title>
   </head>
-  <body>
+<body class="site">
     <header>
-      <div class="row nav-bar">
-        <a class="col-md-4 title center" href="#">
+      <div class="row no-gutters nav-bar sticky-top">
+        <a class="col-12 col-md-4 title center" href="#">
           <h1>Georgia Blake</h1>
-          <h2>- Textile Designer -</h2>
+          <h2>-Textile Designer-</h2>
         </a>
-        <div class="col-md-8">
-        <!--Below: a standard 2x2 grid from bootstrap's documentation, with the divider collumn made invisible on xs and small screens-->
+
+        <div class="col-12 d-md-none">
+          <!--Below: a standard dropdown from bootstrap's documentation, customised.-->
+          <p>
+            <a
+              class="btn btn-primary center mob-nav-drop"
+              data-toggle="collapse"
+              href="#collapseExample"
+              role="button"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              <i class="fas fa-bars"></i>
+            </a>
+          </p>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body center">
+              <button
+                type="button"
+                class="btn btn-secondary center btn-nav-drop"
+              >
+                <a href="index.html">Home</a>
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary center btn-nav-drop"
+              >
+                <a href="portfolio.html">Portfolio</a>
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary center btn-nav-drop"
+              >
+                <a href="cv.html">CV</a>
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary center btn-nav-drop active"
+              >
+                <a href="contact.html">Contact</a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-8 d-none d-sm-none d-md-inline">
           <div class="container">
-            <div class="row">
-              <div class="col"><button type="button" class="btn btn-secondary center btn-nav-bar"><a href="index.html">Home</a></button></div>
-              <div class="col"><button type="button" class="btn btn-secondary center btn-nav-bar"><a href="portfolio.html">Portfolio</a></button></div>
-              <div class="w-100 d-block d-sm-block d-md-none"></div>
-              <div class="col"><button type="button" class="btn btn-secondary center btn-nav-bar"><a href="cv.html">CV</a></button></div>
-              <div class="col"><button type="button" class="btn btn-secondary center btn-nav-bar active"><a href="contact.html">Contact</a></button></div>
+            <div class="row no-gutters">
+              <div class="col">
+                <button
+                  type="button"
+                  class="btn btn-secondary center btn-nav-bar"
+                >
+                  <a href="index.html">Home</a>
+                </button>
+              </div>
+              <div class="col">
+                <button
+                  type="button"
+                  class="btn btn-secondary center btn-nav-bar"
+                >
+                  <a href="portfolio.html">Portfolio</a>
+                </button>
+              </div>
+              <div class="col">
+                <button
+                  type="button"
+                  class="btn btn-secondary center btn-nav-bar"
+                >
+                  <a href="cv.html">CV</a>
+                </button>
+              </div>
+              <div class="col">
+                <button
+                  type="button"
+                  class="btn btn-secondary center btn-nav-bar active"
+                >
+                  <a href="contact.html">Contact</a>
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </header>
-    <section></section>
-    <footer></footer>
+    <section class="container-fluid main-content main-content-2 site-content">
+      <div class="row no-gutters">
+        <div class="col">
+          <h3 class="contact-heading text-center">
+            Got a project in mind?
+          </h3>
+          <h5 class="uppercase text-center">Let's work together!</h5>
+          <div>
+            <form class="work-form center">
+              <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required/>
+              <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required/>
+              <textarea rows="5" name="projectsummary" id="projectsummary" class="form-control" placeholder="Project description" required></textarea>
+              <div class="text-center">
+                <div class="col">
+                    <button type="submit" class="btn btn-primary btn-lg active btn-nav-drop center" id="send-project">Send Project Request</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="row no-gutters">
+        <div class="col-12 col-md-8">
+          <div class="row no-gutters">
+            <div class="col-1"></div>
+            <div class="col-11 me-container">
+              <h4 class="me">Me:</h4>
+              <p class="me">
+                A talented and dedicated textile designer&nbsp;
+                <a href="#"><i class="fas fa-home"></i></a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 contact-information socials">
+          <h4 class="me">Socials:</h4>
+          &nbsp;&nbsp;<a href="#"><i class="fab fa-linkedin"></i></a
+          >&nbsp;&nbsp;
+          <a href="#"><i class="fab fa-instagram-square"></i></a>&nbsp;&nbsp;
+          <a href="#"><i class="fab fa-facebook-square"></i></a>&nbsp;&nbsp;
+          <a href="#"><i class="fab fa-youtube-square"></i></a>&nbsp;&nbsp;
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
