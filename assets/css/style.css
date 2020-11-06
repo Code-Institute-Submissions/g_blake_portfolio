@@ -108,7 +108,7 @@ h1 {
 .btn-nav-bar {
   margin-top: 10px;
   margin-bottom: 10px;
-  padding: 20px 17px 20px 17px;
+  padding: 20px 17px 12px 17px;
   background-color: #e4d8d8;
   border-radius: 0;
   width: 95%;
@@ -181,7 +181,7 @@ h1 {
 /*--------------------------------------------------Main section (index)*/
 
 .main-content {
-  background-color: whitesmoke;
+  background-color: #fffff7;
   padding-top: 15px;
   border-top: 1px solid;
 }
@@ -218,18 +218,20 @@ h1 {
     padding: 10px 0 0 17px;
 }
 
-#cv-download {
-    background-color: #733e24;
+.cv-download {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  padding: 10px 0 10px 0;
+  border-radius: 0;
+  width: 80%;
+  height: 75%;
+  font-family: "Old Standard TT", serif;
+  font-size: x-large;
 }
 
-.cv-download {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 18px;
-    width: 50%;
-    height: auto;
-    background-color: #E4D8D8;
-    border: 1px solid;
+#cv-down-col {
+    color: white;
+    background-color: #733e24;
 }
 
 /*--------------------------------------------------Main section (contact)*/
@@ -254,6 +256,31 @@ h1 {
   flex: 1;
 }
 
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(97, 41, 28, 0.5);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(97, 41, 28, 0.5)
+}
+
+/*--------------------------------------------------Main section (portfolio)*/
+
+#photo {
+    clear: both;
+    line-height: 0;
+    column-count: 4;
+    column-gap: 0px;
+}
+
+#photo img {
+    width: 100%;
+}
+
+.port-title {
+    padding: 10px 0 10px 15px;
+}
+
 /*--------------------------------------------------Footer*/
 
 .me {
@@ -269,9 +296,7 @@ h1 {
   padding: 15px 0 15px 0;
 }
 
-.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.2rem rgba(97, 41, 28, 0.5)
-}
+
 /*--------------------------------------------------Media Queries*/
 
 @media (max-width: 768px) {
@@ -286,14 +311,21 @@ h1 {
   .skills{
       border-bottom: 1px solid;
   }
-  #cv-download{
+  .cv-download{
     width: 75%;
     margin-bottom: 20px;
   }
   .main-text{
       padding: 15px 10px 0 10px;
   }
+  #contact-information {
+    padding-left: 0;
 }
+#photo {
+        columns: 3;
+    }
+}
+
 
 @media (min-width: 768px) {
     .skills{
@@ -304,5 +336,9 @@ h1 {
     }
     .work-form {
     max-width: 60%;
+    }
+    .cv-download {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }

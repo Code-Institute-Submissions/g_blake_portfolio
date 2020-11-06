@@ -32,28 +32,132 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>GB Portfolio</title>
   </head>
-  <body>
+  <body class="site">
     <header>
-      <div class="row nav-bar">
-        <a class="col-md-4 title center" href="#">
+      <div class="row no-gutters nav-bar sticky-top">
+        <a class="col-12 col-md-4 title center" href="index.html">
           <h1>Georgia Blake</h1>
-          <h2>- Textile Designer -</h2>
+          <h2>-&nbsp;Textile Designer&nbsp;-</h2>
         </a>
-        <div class="col-md-8">
-        <!--Below: a standard 2x2 grid from bootstrap's documentation, with the divider collumn made invisible on xs and small screens-->
+
+        <div class="col-12 d-md-none">
+          <!--Below: a standard dropdown from bootstrap's documentation, customised.-->
+          <p>
+            <a
+              class="btn btn-primary center mob-nav-drop"
+              data-toggle="collapse"
+              href="#collapseExample"
+              role="button"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              <i class="fas fa-bars"></i>
+            </a>
+          </p>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body center">
+              <button
+                type="button"
+                class="btn btn-secondary center btn-nav-drop"
+              >
+                <a href="index.html">Home</a>
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary center btn-nav-drop active"
+              >
+                <a href="portfolio.html">Portfolio</a>
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary center btn-nav-drop"
+              >
+                <a href="cv.html">CV</a>
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary center btn-nav-drop"
+              >
+                <a href="contact.html">Contact</a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-8 d-none d-sm-none d-md-inline">
           <div class="container">
-            <div class="row">
-              <div class="col"><button type="button" class="btn btn-secondary center btn-nav-bar"><a href="index.html">Home</a></button></div>
-              <div class="col"><button type="button" class="btn btn-secondary center btn-nav-bar active"><a href="portfolio.html">Portfolio</a></button></div>
-              <div class="w-100 d-block d-sm-block d-md-none"></div>
-              <div class="col"><button type="button" class="btn btn-secondary center btn-nav-bar"><a href="cv.html">CV</a></button></div>
-              <div class="col"><button type="button" class="btn btn-secondary center btn-nav-bar"><a href="contact.html">Contact</a></button></div>
+            <div class="row no-gutters">
+              <div class="col">
+                <button
+                  type="button"
+                  class="btn btn-secondary center btn-nav-bar"
+                >
+                  <a href="index.html">Home</a>
+                </button>
+              </div>
+              <div class="col">
+                <button
+                  type="button"
+                  class="btn btn-secondary center btn-nav-bar active"
+                >
+                  <a href="portfolio.html">Portfolio</a>
+                </button>
+              </div>
+              <div class="col">
+                <button
+                  type="button"
+                  class="btn btn-secondary center btn-nav-bar"
+                >
+                  <a href="cv.html">CV</a>
+                </button>
+              </div>
+              <div class="col">
+                <button
+                  type="button"
+                  class="btn btn-secondary center btn-nav-bar"
+                >
+                  <a href="contact.html">Contact</a>
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </header>
-    <section></section>
-    <footer></footer>
+    <section class="site-content">
+      <h2 class="port-title">Embroidery</h2>
+      <div id="photo">
+        <img src="assets/images/earring-1.jpg" alt="1st earring image" />
+        <img src="assets/images/earring2.jpg" alt="2nd earring image" />
+        <img src="assets/images/embroidery-1.jpg" alt="1st embroidery image" />
+        <img src="assets/images/embroidery-2.jpg" alt="2nd embroidery image" />
+        <img src="assets/images/embroidery-3.jpg" alt="3rd embroidery image" />
+        <img src="assets/images/embroidery-4.jpg" alt="4th embroidery image" />
+        <img src="assets/images/embroidery-5.jpg" alt="5th embroidery image" />
+      </div><h2 class="port-title"></h2>
+    </section>
+    <footer>
+      <div class="row no-gutters">
+        <div class="col-12 col-md-8">
+          <div class="row no-gutters">
+            <div class="col-1"></div>
+            <div class="col-11 me-container">
+              <h4 class="me">Me:</h4>
+              <p class="me">
+                A talented and dedicated textile designer&nbsp;
+                <a href="#"><i class="fas fa-home"></i></a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 contact-information socials">
+          <h4 class="me">Socials:</h4>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-instagram-square"></i></a>
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+          <a href="#"><i class="fab fa-youtube-square"></i></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
