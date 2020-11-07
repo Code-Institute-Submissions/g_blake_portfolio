@@ -19,9 +19,9 @@ a:hover {
 /* The folowing is a workaround that makes the clickable area of links the same as the width and height of the button that conains them, I got the idea from: https://stackoverflow.com/questions/11078509/how-to-increase-the-clickable-area-of-a-a-tag-button*/
 
 button a {
-    display: block;
-    width: inherit;
-    height: inherit;
+  display: block;
+  width: inherit;
+  height: inherit;
 }
 
 ul {
@@ -80,8 +80,6 @@ header {
 .button_img_r {
   right: 30%;
 }
-
-
 
 .title {
   font-family: "Old Standard TT", serif;
@@ -173,9 +171,9 @@ h1 {
 }
 
 .card {
-    width: 80%;
-    padding: 10px;
-    border-radius: 0;
+  width: 80%;
+  padding: 10px;
+  border-radius: 0;
 }
 
 /*--------------------------------------------------Main section (index)*/
@@ -190,32 +188,32 @@ h1 {
   text-align: center;
 }
 
-#about-me{
-    padding-right: 10px;
+#about-me {
+  padding-right: 10px;
 }
 
 #contact-information {
-    padding-left: 10px;
+  padding-left: 10px;
 }
 
 /*--------------------------------------------------Main section (cv)*/
 
 .main-content-2 {
-    padding-top: 0;
-    border-bottom: 1px solid;
+  padding-top: 0;
+  border-bottom: 1px solid;
 }
 
 .skills-list {
-    padding-bottom: 15px;
+  padding-bottom: 15px;
 }
 
-.skills{
-    text-align: center;
-    padding-top: 10px;
+.skills {
+  text-align: center;
+  padding-top: 10px;
 }
 
-#work-history{
-    padding: 10px 0 0 17px;
+#work-history {
+  padding: 10px 0 0 17px;
 }
 
 .cv-download {
@@ -230,20 +228,20 @@ h1 {
 }
 
 #cv-down-col {
-    color: white;
-    background-color: #733e24;
+  color: white;
+  background-color: #733e24;
 }
 
 /*--------------------------------------------------Main section (contact)*/
 
 .work-form {
-    max-width: 80%;
+  max-width: 80%;
 }
 
 #send-project {
-    width: 45%;
-    background-color: #61291c; 
-    margin-bottom: 15px;
+  width: 45%;
+  background-color: #61291c;
+  margin-bottom: 15px;
 }
 
 .site {
@@ -257,28 +255,39 @@ h1 {
 }
 
 .form-control:focus {
-    box-shadow: 0 0 0 0.2rem rgba(97, 41, 28, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(97, 41, 28, 0.5);
 }
 
-.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.2rem rgba(97, 41, 28, 0.5)
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(97, 41, 28, 0.5);
 }
 
 /*--------------------------------------------------Main section (portfolio)*/
 
-#photo {
-    clear: both;
-    line-height: 0;
-    column-count: 4;
-    column-gap: 0px;
+.photo {
+  clear: both;
+  line-height: 0;
+  column-count: 4;
+  column-gap: 0px;
 }
 
-#photo img {
+.film {
+    column-count: 3;
+}
+
+.photo img {
+  width: 100%;
+}
+
+.head-piece {
     width: 100%;
+    height: auto;
 }
 
 .port-title {
-    padding: 10px 0 10px 15px;
+  padding: 10px 0 10px 15px;
 }
 
 /*--------------------------------------------------Footer*/
@@ -297,10 +306,11 @@ h1 {
 }
 
 
+
 /*--------------------------------------------------Media Queries*/
 
 @media (max-width: 768px) {
-    .nav-bar {
+  .nav-bar {
     padding-bottom: 5px;
   }
   .hidden {
@@ -308,37 +318,46 @@ h1 {
     filter: opacity(0);
     width: 0;
   }
-  .skills{
-      border-bottom: 1px solid;
+  .skills {
+    border-bottom: 1px solid;
   }
-  .cv-download{
+  .cv-download {
     width: 75%;
     margin-bottom: 20px;
   }
-  .main-text{
-      padding: 15px 10px 0 10px;
+  .main-text {
+    padding: 15px 10px 0 10px;
   }
   #contact-information {
     padding-left: 0;
+  }
+  .photo {
+    columns: 3;
+  }
+  .footer-1 {
+    border-top: 1px solid;
 }
-#photo {
-        columns: 3;
-    }
 }
-
 
 @media (min-width: 768px) {
-    .skills{
-        border-right: 1px solid;
-    }
-    #send-project {
-        width: 30%;
-    }
-    .work-form {
+  .skills {
+    border-right: 1px solid;
+  }
+  #send-project {
+    width: 30%;
+  }
+  .work-form {
     max-width: 60%;
-    }
-    .cv-download {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
+  }
+  .cv-download {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+
+@media (max-width: 576px){
+    .photo {
+    columns: 2;
+  }
 }
