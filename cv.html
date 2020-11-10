@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GB Portfolio | CV</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
@@ -30,7 +31,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <title>GB Portfolio</title>
   </head>
   <body class="site">
     <header>
@@ -40,51 +40,46 @@
           <h2>-&nbsp;Textile Designer&nbsp;-</h2>
         </a>
 
-        <div class="col-12 d-md-none">
-          <!--Below: a standard dropdown from bootstrap's documentation, customised.-->
-          <p>
-            <a
-              class="btn btn-primary center mob-nav-drop"
-              data-toggle="collapse"
-              href="#collapseExample"
-              role="button"
-              aria-expanded="false"
-              aria-controls="collapseExample"
-            >
-              <i class="fas fa-bars"></i>
+         <div class="col-12 d-md-none">
+        <!--Below: a standard dropdown from bootstrap's documentation, customised.-->
+            <p>
+            <a class="btn btn-primary center mob-nav-drop" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                <i class="fas fa-bars"></i>
             </a>
-          </p>
-          <div class="collapse" id="collapseExample">
-            <div class="card card-body center">
-              <button
-                type="button"
-                class="btn btn-secondary center btn-nav-drop"
-              >
-                <a href="index.html">Home</a>
-              </button>
-              <button
-                type="button"
-                class="btn btn-secondary center btn-nav-drop"
-              >
-                <a href="portfolio.html">Portfolio</a>
-              </button>
-              <button
-                type="button"
-                class="btn btn-secondary center btn-nav-drop active"
-              >
-                <a href="cv.html">CV</a>
-              </button>
-              <button
-                type="button"
-                class="btn btn-secondary center btn-nav-drop"
-              >
-                <a href="contact.html">Contact</a>
-              </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body center" id="card">
+                <button
+                  type="button"
+                  class="btn btn-secondary center btn-nav-drop"
+                >
+                  <a href="index.html">Home</a>
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-secondary center btn-nav-drop"
+                >
+                  <a href="portfolio.html">Portfolio</a>
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-secondary center btn-nav-drop active"
+                >
+                  <a href="cv.html">CV</a>
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-secondary center btn-nav-drop"
+                >
+                  <a href="contact.html">Contact</a>
+                </button>
+                </div>
             </div>
-          </div>
+
         </div>
 
-        <div class="col-md-8 d-none d-sm-none d-md-inline">
+       <div class="col-md-8 d-none d-sm-none d-md-inline ">
+          <!--Below: a standard 2x2 grid from bootstrap's documentation, with the divider collumn made invisible on medium screens or larger-->
           <div class="container">
             <div class="row no-gutters">
               <div class="col">
@@ -135,13 +130,19 @@
             <li>Alterations</li>
             <li>Team-work</li>
           </ul>
+          <div class="center">
+            <a href="assets/documents/gblake_dummy_cv.pdf" class="btn btn-primary btn-lg active cv-download center" id="cv-down-col" role="button" aria-pressed="true" target="_blank"
+                    ><span><i class="fa fa-download" aria-hidden="true">&nbsp;</i
+                    >Download Full CV</span></a
+                  >
+            </div>
         </div>
         <div class="col-12 col-md-9" id="work-history">
           <div class="row no-gutters">
             <div class="col"><h2>Work History:</h2></div>
           </div>
           <div class="row no-gutters">
-            <div class="col-12 col-md-4 work-history">
+            <div class="col-md-12 col-lg-6 work-history">
               <ul>
                 <li>
                   <p>
@@ -175,7 +176,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col-12 col-md-4 work-history d-none d-md-block">
+            <div class="col-md-12 col-lg-6 work-history d-none d-md-block">
               <ul>
                 <li>
                   <p>
@@ -209,53 +210,20 @@
                 </li>
               </ul>
             </div>
-            <div class="col-12 col-md-4 work-history">
-            <ul class="d-none d-md-block">
-            <li>
-                  <p>
-                    Nov 2020 - Present<br />
-                    <b>Reading College (Teaching Assistant)</b>
-                  </p>
-                  <p>
-                    Assisting teachers in a variety of subjects, often working
-                    with students with special needs.
-                  </p>
-                </li>
-            </ul>
-            <div class="center">
-            <a href="assets/documents/gblake_dummy_cv.pdf" class="btn btn-primary btn-lg active cv-download center" id="cv-down-col" role="button" aria-pressed="true" target="_blank"
-                    ><span><i class="fa fa-download" aria-hidden="true">&nbsp;</i
-                    >Download Full CV</span></a
-                  >
-            </div>
-            </div>
           </div>
         </div>
       </div>
     </section>
     <footer>
-      <div class="row no-gutters footer-1">
-        <div class="col-12 col-md-8">
-          <div class="row no-gutters">
-            <div class="col-1"></div>
-            <div class="col-11 me-container">
-              <h4 class="me">Me:</h4>
-              <p class="me">
-                A talented and dedicated textile designer&nbsp;
-                <a href="#"><i class="fas fa-home"></i></a>
-              </p>
-            </div>
+        <div class="row no-gutters footer-1">
+          <div class="col-12 contact-information socials">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-youtube-square"></i></a>
+            <p>© | 2020 | Joseph Keable</p>
           </div>
         </div>
-        <div class="col-12 col-md-4 contact-information socials">
-          <h4 class="me">Socials:</h4>
-          &nbsp;&nbsp;<a href="#"><i class="fab fa-linkedin"></i></a
-          >&nbsp;&nbsp;
-          <a href="#"><i class="fab fa-instagram-square"></i></a>&nbsp;&nbsp;
-          <a href="#"><i class="fab fa-facebook-square"></i></a>&nbsp;&nbsp;
-          <a href="#"><i class="fab fa-youtube-square"></i></a>&nbsp;&nbsp;
-        </div>
-      </div>
     </footer>
   </body>
 </html>
