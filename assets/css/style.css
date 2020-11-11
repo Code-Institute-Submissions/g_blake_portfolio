@@ -17,6 +17,11 @@ a:hover {
   color: #e8b00a;
 }
 
+button a:hover {
+  text-decoration: none;
+  color: #e8b00a;
+}
+
 a i:hover {
   text-decoration: none;
   color: #e8b00a;
@@ -26,8 +31,8 @@ a i:hover {
 
 button a {
   display: block;
-  width: inherit;
-  height: inherit;
+  width: 100%;
+  height: 100%;
 }
 
 ul {
@@ -125,10 +130,6 @@ h1 {
   border-top: 1px solid;
 }
 
-.btn-nav-link{
-    margin-left: 5px;
-}
-
 .btn-nav-bar {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -142,11 +143,11 @@ h1 {
 .btn-nav-bar-non-main{
   margin-top: 25%;
   margin-bottom: 10px;
-  padding: 20px 17px 12px 17px;
+  padding: 25px 17px 12px 17px;
   background-color: #e4d8d8;
   border-radius: 0;
   width: 88%;
-  height: 70%;
+  height: 60%;
 }
 
 #card {
@@ -223,6 +224,7 @@ h1 {
 
 .contact-information {
   text-align: center;
+  padding-bottom: 15px;
 }
 
 .index-title {
