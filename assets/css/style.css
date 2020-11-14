@@ -17,24 +17,6 @@ a:hover {
   color: #e8b00a;
 }
 
-button a:hover {
-  text-decoration: none;
-  color: #e8b00a;
-}
-
-a i:hover {
-  text-decoration: none;
-  color: #e8b00a;
-}
-
-/* The folowing is a workaround that makes the clickable area of links the same as the width and height of the button that conains them, I got the idea from: https://stackoverflow.com/questions/11078509/how-to-increase-the-clickable-area-of-a-a-tag-button*/
-
-button a {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -147,7 +129,14 @@ h1 {
   background-color: #e4d8d8;
   border-radius: 0;
   width: 88%;
-  height: 60%;
+  height: 70%;
+}
+
+.btn-secondary {
+    color: black;
+}
+.btn-secondary:hover {
+    color: #e8b00a;
 }
 
 #card {
@@ -204,7 +193,7 @@ h1 {
   background-color: #b2a7a7;
 }
 
-.btn-nav-bar,.btn-nav-bar-non-main a {
+.btn-nav-bar,.btn-nav-bar-non-main {
   color: black;
   font-family: "Old Standard TT", serif;
   font-size: x-large;
@@ -229,9 +218,7 @@ h1 {
 
 .index-title {
   padding: 10px 0 10px 20px;
-  border-bottom: 1px solid;
-  border-top: 1px solid;
-  border-left: 1px solid;
+  border: 1px solid;
   background-color: #e4d8d8;
 }
 
@@ -392,6 +379,7 @@ textarea {
   border-top: 1px solid;
   border-bottom: 1px solid;
   text-align: center;
+  box-shadow: 5px 6px rgba(97, 41, 28, 0.2);
 }
 
 .portfolio {
@@ -437,6 +425,10 @@ textarea {
   border-top: 1px solid;
 }
 
+a i:hover{
+    color: #e8b00a;
+}
+
 /*--------------------------------------------------Media Queries*/
 
 @media (max-width: 768px) {
@@ -457,8 +449,6 @@ textarea {
   }
   .index-title {
     padding: 10px 0 10px 5px;
-    border-bottom: 1px solid;
-    border-top: 1px solid;
     background-color: #e4d8d8;
   }
   #contact-information {
@@ -466,6 +456,16 @@ textarea {
   }
   .footer-1 {
     border-top: 1px solid;
+  }
+  .nav-bar-non-main{
+      padding-bottom: 30px;
+      padding-top: 35px;
+  }
+  .nav-cont{
+      padding-top: 30px;
+  }
+  #send-project {
+      width: 30%;
   }
 }
 
