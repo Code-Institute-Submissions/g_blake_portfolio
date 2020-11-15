@@ -47,7 +47,6 @@ li {
 .title-non-main {
   position: absolute;
   top: 50%;
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 /*--------------------------------------------------Header*/
@@ -148,7 +147,7 @@ h1 {
 .mob-nav-drop {
   width: 15%;
   background-color: #61291c;
-  border-color: #61291c;
+  border: none;
   border-radius: 0;
   margin-top: 7px;
 }
@@ -284,13 +283,13 @@ h1 {
 
 #cv-down-col:hover {
   background-color: #e8b00a;
-  border-color: #e8b00a;
+  border: none;
 }
 
 #cv-down-col {
   color: #fffff7;
   background-color: #733e24;
-  border-color: #733e24;
+  border: none;
   border-radius: 5px;
 }
 
@@ -321,7 +320,7 @@ textarea {
 #send-project {
   width: 25%;
   background-color: #733e24;
-  border-color: #733e24;
+  border: none;
   margin-bottom: 15px;
   border-radius: 5px;
   color: #fffff7;
@@ -329,7 +328,7 @@ textarea {
 
 #send-project:hover {
   background-color: #e8b00a;
-  border-color: #e8b00a;
+  border: none;
 }
 
 .site {
