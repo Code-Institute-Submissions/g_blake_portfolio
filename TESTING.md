@@ -1,6 +1,8 @@
 # Testing
 
-I’m going to revisit the user stories from the above UX section of the README file and explain how to test the relevant functionality:
+All [HTML](https://validator.w3.org/) and [CSS](https://jigsaw.w3.org/css-validator/) has been run through their respective validators, and have returned without errors. According to the validator, my CSS is fine but some of the CSS in the various CDNs that I have used does flag issues.
+
+Now, I’m going to revisit the user stories from the above UX section of the README file and explain how to test the relevant functionality:
 
 
 #### User 1 (New Recruiter)
@@ -107,3 +109,13 @@ The video below shows me performing such tests. Initially, the site does not for
 ### Browser Testing
 
 I have recorded videos of myself testing the project across the major browsers [here](https://drive.google.com/drive/folders/1sPbTz5k_ZzB2YQZ7lZIsBydtVCgzn0vK?usp=sharing). 
+
+### Chrome lighthouse reports for the 4 pages:
+
+![homepage lighthouse report](assets/images/screenshots/lighthouse/homepage-lighthouse.png)
+
+![portfolio lighthouse report](assets/images/screenshots/lighthouse/portfolio-lighthouse.png)
+
+![cv lighthouse report](assets/images/screenshots/lighthouse/cv-lighthouse.png)
+
+![contact lighthouse report](assets/images/screenshots/lighthouse/contact-lighthouse.png)
