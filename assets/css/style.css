@@ -38,6 +38,8 @@ li {
   width: inherit;
 }
 
+/*Below is method of vertically centering content that I found here: https://www.w3schools.com/howto/howto_css_center-vertical.asp*/
+
 .title-non-main-container {
   position: relative;
 }
@@ -435,6 +437,8 @@ a i:hover{
   .nav-bar {
     padding-bottom: 5px;
   }
+
+  /* this page was influential when creating this custom class: https://www.sitepoint.com/hide-elements-in-css/*/
   .hidden {
     height: 0;
     filter: opacity(0);
