@@ -191,7 +191,7 @@ I do not claim to understand all of this code, but it is now doing what I want i
 
 ## Testing
 
-See external [document]() for testing.
+See external [document](https://github.com/dudeguythethird/milestone_project1/blob/master/TESTING.md) for testing.
 
 ## Deployment
 
