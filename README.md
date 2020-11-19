@@ -93,9 +93,9 @@ Maybe this designer is Greg but later on. He's decided to contact Georgia now, s
     *   This project uses **JavaScript** to provide it with basic interactivity, by way of the Bootstrap framework below.
 *   [Bootstrap](https://getbootstrap.com/)
     *   This project uses the **Bootstrap** framework to simplify creating dropdowns, buttons, a grid layout, and other CSS/JavaSript functionality. 
-*   [Google Fonts]([https://fonts.google.com/](https://fonts.google.com/))
+*   [Google Fonts](https://fonts.google.com/)
     *   This project uses **Google Fonts** to allow the adding of more interesting fonts to the project.
-*   [Font Awesome]([https://fontawesome.com/](https://fontawesome.com/))
+*   [Font Awesome](https://fontawesome.com/)
     *   This project uses **Font Awesome** to allow the inclusion of icons. 
 
 
