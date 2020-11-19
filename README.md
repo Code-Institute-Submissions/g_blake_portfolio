@@ -1,5 +1,9 @@
 # Georgia Blake (Textile Designer) Portfolio/CV Website
 
+![site across various screen sizes](assets/images/responsive.png)
+
+[Live Here](https://dudeguythethird.github.io/milestone_project1/index.html)
+
 This site is a portfolio/CV site for a textile designer called Georgia Blake. Its primary function is to introduce Georgia to potential recruiters or other textile designers, to give them an accurate idea of her style and competencies, without confusing or frustrating them. The project is designed to be useful both to recruiters and other members of the textile community. This means that it has to function well as a showcase of Georgia's work while containing smooth and frictionless pathways to getting in contact with Georgia herself (for either collaborators or recruiters.) Given the variety of potential users, it is of paramount importance that the user experience be consistently good across all commonly used devices.
 
 As the project is for an artist, it would be beneficial for it to reflect something of that artist's personality. This is why the project has a minimalist look that incorporates color and font choices inspired by Georgia's logo. Indeed, the design and feel of the site is intended to flow from the design and feel of the logo. It is also deliberately sparse. After all, this is a portfolio site, it is intended to be (among other things) a vessel for the work of the artist. One wouldn't want the design of the site to distract from that work, hence a minimal and stylistically consistent approach has been applied throughout.
@@ -72,7 +76,9 @@ Maybe this designer is Greg but later on. He's decided to contact Georgia now, s
 
 ### Features Left to Implement
 
-No further features left to implement.
+* Uniform sizing for portfolio images.
+* Sticky header.
+* Tab-based portfolio.
 
 
 ## Technologies Used
